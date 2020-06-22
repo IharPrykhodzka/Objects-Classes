@@ -1,0 +1,7 @@
+package social
+
+data class Geo(
+        var type: String,
+        var coordinates: String,
+        var place: Place){
+}
