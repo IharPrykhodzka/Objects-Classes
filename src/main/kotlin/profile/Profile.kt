@@ -6,13 +6,16 @@ class Profile(
         val name: String,
         val surname: String,
         val status: String,
-        val avatar: String) {
+        val avatar: String,
+        fullName2: String) {
 
     fun fullName(): String {
         return "Полное имя: $name $surname"
     }
 
-    val fullName2: String = "Полное имя: $name $surname"
+    var fullName2: String = fullName2
+    get() = this.name + " " + this.surname
+
 
     override fun toString(): String {
         return """id=$id, 

@@ -16,11 +16,13 @@ fun main() {
     button.button = "Don't click me"
     println(button.button) // Don't click me
 
-    val main = ViewGroup()
+
     val title = TextView("Main Screen")
+    val main = ViewGroup(title)
     main.addView(title)
 
-    val content = ViewGroup()
+
     val readMore = Button("Read more")
+    val content = ViewGroup(readMore)
     content.addView(readMore)
 }

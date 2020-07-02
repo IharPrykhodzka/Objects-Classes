@@ -1,7 +1,6 @@
 package hiearchy
 
-class TextView(texts: String) : View() {
-
-    var text = texts
+open class TextView(open var text: String) : View() {
+    constructor() : this("Some Text")
 
 }
