@@ -1,9 +1,9 @@
 package hiearchy
 
-class ViewGroup(var someView: View): View() {
+class ViewGroup(): View() {
 
     fun addView(view: View) {
-        println(view)
+        view.click()
     }
 
 }

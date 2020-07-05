@@ -1,6 +1,6 @@
 package hiearchy
 
-class Button(override var text: String): TextView() {
+class Button(text: String): TextView(text) {
 
     var button: String = "Click me"
 
